@@ -18,7 +18,7 @@ async def warn(c, m):
                  await m.reply_text("User Not Notfied Sucessfully 😔") 
 
 
-@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["addpremium"]))
+@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["active"]))
 async def buypremium(bot, message):
 	await message.reply_text("Select Plan.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("VIP",callback_data = "vip") ]]))
@@ -26,7 +26,7 @@ async def buypremium(bot, message):
 
 @Client.on_callback_query(filters.regex('vip'))
 async def vip(bot,update):
-	id = update.message.reply_to_message.text.split("/addpremium")
+	id = update.message.reply_to_message.text.split("/active")
 	user_id = id[1].replace(" ", "")
 	inlimit  = 10737418240000
 	uploadlimit(int(user_id),10737418240000)
