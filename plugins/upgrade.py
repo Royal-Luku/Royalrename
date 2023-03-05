@@ -8,19 +8,17 @@ async def upgrade(bot,update):
 	Daily  Upload limit 2GB
 	Price 0
 	
-	**VIP** 
+      **VIP** 
 	Daily  Upload  limit unlimited
-	Price Rs 100  🇮🇳/🌎 2$  per Month
+	Price Rs 100 🇮🇳
 	
-	
-	Pay Using Upi I'd ```greymatter658@ybl```
-	
-	After Payment Send Screenshots Of 
-        Payment To Admin"""
+	Upi id :- ```adityakar052@paytm```
+    
+        After Payment Done Send Screen shot To Admin"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/OTT_Zone_Admin")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://www.paypal.me/mokshb658"),
-        			InlineKeyboardButton("Other Methods",url = "https://t.me/GreyMatters_about/66")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("ADMIN",url = "https://t.me/OTT_Zone_Admin")], 
+        			[InlineKeyboardButton("MOVIES CHANNEL",url = "https://t.me/worldofmovies8"),
+        			InlineKeyboardButton("JOIN BACKUP",url = "https://t.me/Wombackup")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -31,16 +29,15 @@ async def upgradecm(bot,message):
 	Price 0
 	
 	**VIP** 
-	Daily  Upload  limit unlimited 
-	Price Rs 100  🇮🇳/🌎 2$  per Month
+	Daily  Upload  limit unlimited
+	Price Rs 100 🇮🇳
 	
-	
-	Pay Using Upi I'd ```greymatter658@ybl```
-	
-	After Payment Send Screenshots Of 
-        Payment To Admin"""
+	Upi id :- ```adityakar052@paytm```
+    
+        After Payment Done Send Screen shot To Admin"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/OTT_Zone_Admin")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://www.paypal.me/mokshb658"),
-        			InlineKeyboardButton("Other Methods",url = "https://t.me/GreyMatters_about/66")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
-	await message.reply_text(text = text,reply_markup = keybord)
+        			InlineKeyboardButton("ADMIN",url = "https://t.me/OTT_Zone_Admin")], 
+        			[InlineKeyboardButton("MOVIES CHANNEL",url = "https://t.me/worldofmovies8"),
+        			InlineKeyboardButton("JOIN BACKUP",url = "https://t.me/Wombackup")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+	await update.message.edit(text = text,reply_markup = keybord)
+	
